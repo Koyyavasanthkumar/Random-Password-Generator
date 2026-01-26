@@ -33,4 +33,5 @@ copyIcon.addEventListener('click', () => {
     setTimeout(() => {
         copiedEl.classList.remove('active');
     }, 2000);
+
 });
