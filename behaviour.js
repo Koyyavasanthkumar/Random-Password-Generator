@@ -19,17 +19,15 @@ function generatePassword() {
     passwordel.value = password;
 }
 
-// 👉 COPY FUNCTION
 copyIcon.addEventListener('click', () => {
     if (!passwordel.value) return;
 
     navigator.clipboard.writeText(passwordel.value);
 
-    // Show copied password in bottom popup
+   
     copiedEl.textContent = `Copied: ${passwordel.value}`;
     copiedEl.classList.add('active');
 
-    // Hide after 2 seconds
     setTimeout(() => {
         copiedEl.classList.remove('active');
     }, 2000);
